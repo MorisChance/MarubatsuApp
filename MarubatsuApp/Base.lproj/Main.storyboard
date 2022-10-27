@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ou7-UV-bVx">
-                                <rect key="frame" x="20" y="619" width="171" height="171"/>
+                                <rect key="frame" x="20" y="632" width="171" height="158"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ou7-UV-bVx" secondAttribute="height" multiplier="1:1" id="Id1-Wh-iAe"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1H-tk-2yK">
-                                <rect key="frame" x="199" y="619" width="171" height="171"/>
+                                <rect key="frame" x="199" y="632" width="171" height="158"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="V1H-tk-2yK" secondAttribute="height" multiplier="1:1" id="TD2-Hf-a9S"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DP8-sq-28u">
-                                <rect key="frame" x="20" y="55" width="350" height="100"/>
+                                <rect key="frame" x="20" y="137" width="350" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="tR5-gm-d1H"/>
                                 </constraints>
@@ -62,28 +62,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sn-nY-tBN">
+                                <rect key="frame" x="0.0" y="62" width="390" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="問題を作成する"/>
+                                <connections>
+                                    <segue destination="iQE-ET-kN6" kind="show" id="b33-j2-36S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DP8-sq-28u" secondAttribute="trailing" constant="20" id="4tw-3n-gYd"/>
                             <constraint firstItem="DP8-sq-28u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Bm-fZ-nGg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DP8-sq-28u" secondAttribute="trailing" constant="20" id="8D3-f9-Ij8"/>
+                            <constraint firstItem="2sn-nY-tBN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Dw-1Y-t0g"/>
                             <constraint firstItem="V1H-tk-2yK" firstAttribute="leading" secondItem="ou7-UV-bVx" secondAttribute="trailing" constant="8" id="B1v-8Z-7fc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V1H-tk-2yK" secondAttribute="trailing" constant="20" id="MrI-k0-p6g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ou7-UV-bVx" secondAttribute="bottom" constant="20" id="R1X-1V-3M5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2sn-nY-tBN" secondAttribute="trailing" id="TaS-YQ-gGv"/>
                             <constraint firstItem="V1H-tk-2yK" firstAttribute="leading" secondItem="ou7-UV-bVx" secondAttribute="trailing" constant="80" id="U2u-u2-YuZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V1H-tk-2yK" secondAttribute="trailing" constant="20" id="U3N-iD-ict"/>
                             <constraint firstItem="DP8-sq-28u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="gCj-lN-g8I"/>
                             <constraint firstItem="ou7-UV-bVx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="h5d-nR-qDk"/>
                             <constraint firstItem="V1H-tk-2yK" firstAttribute="height" secondItem="ou7-UV-bVx" secondAttribute="height" id="igd-Cd-u1o"/>
+                            <constraint firstItem="ou7-UV-bVx" firstAttribute="top" secondItem="DP8-sq-28u" secondAttribute="bottom" constant="395" id="imt-5c-Jnf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V1H-tk-2yK" secondAttribute="bottom" constant="20" id="jRV-V0-nFI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V1H-tk-2yK" secondAttribute="bottom" constant="20" id="kjr-Cv-crU"/>
+                            <constraint firstItem="DP8-sq-28u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="ne2-HT-93l"/>
+                            <constraint firstItem="2sn-nY-tBN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="nqm-0k-D1R"/>
                             <constraint firstItem="V1H-tk-2yK" firstAttribute="width" secondItem="ou7-UV-bVx" secondAttribute="width" id="t2V-YU-LUK"/>
+                            <constraint firstItem="DP8-sq-28u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="u3q-bA-B7y"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="4tw-3n-gYd"/>
                                 <exclude reference="U3N-iD-ict"/>
                                 <exclude reference="jRV-V0-nFI"/>
+                                <exclude reference="6Bm-fZ-nGg"/>
+                                <exclude reference="gCj-lN-g8I"/>
                                 <exclude reference="U2u-u2-YuZ"/>
                             </mask>
                         </variation>
@@ -96,6 +114,88 @@
             </objects>
             <point key="canvasLocation" x="135.38461538461539" y="3.5545023696682461"/>
         </scene>
+        <!--addNewQuestion-->
+        <scene sceneID="ITc-Wb-cuM">
+            <objects>
+                <viewController storyboardIdentifier="addNewQuestion" title="addNewQuestion" modalPresentationStyle="fullScreen" id="iQE-ET-kN6" customClass="addNewQuestionViewController" customModule="MarubatsuApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oOw-Sr-FhY">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kn-eK-ICa">
+                                <rect key="frame" x="150" y="57" width="90" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="TOPに戻る">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnButton:" destination="iQE-ET-kN6" eventType="touchUpInside" id="hE8-ec-Hga"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="問題文を入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5nT-lP-YY8">
+                                <rect key="frame" x="16" y="405" width="358" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="end:" destination="iQE-ET-kN6" eventType="editingDidEndOnExit" id="ZhG-50-g2p"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tdd-sX-KvF">
+                                <rect key="frame" x="149.66666666666666" y="474" width="91" height="32"/>
+                                <segments>
+                                    <segment title="✗" width="59"/>
+                                    <segment title="○"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bX-i3-q2d">
+                                <rect key="frame" x="139.66666666666666" y="540" width="111" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="問題を保存">
+                                    <color key="baseForegroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveButton:" destination="iQE-ET-kN6" eventType="touchUpInside" id="nJp-Y4-Eb0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nKc-SM-aF1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tdd-sX-KvF" firstAttribute="centerX" secondItem="oOw-Sr-FhY" secondAttribute="centerX" id="1Uk-j7-XjX"/>
+                            <constraint firstItem="tdd-sX-KvF" firstAttribute="top" secondItem="5nT-lP-YY8" secondAttribute="bottom" constant="35" id="2Ed-ff-oVO"/>
+                            <constraint firstItem="2Kn-eK-ICa" firstAttribute="top" secondItem="nKc-SM-aF1" secondAttribute="top" constant="10" id="5Br-X6-rgk"/>
+                            <constraint firstItem="2Kn-eK-ICa" firstAttribute="leading" secondItem="nKc-SM-aF1" secondAttribute="leading" constant="150" id="7r3-oH-ZOq"/>
+                            <constraint firstItem="5nT-lP-YY8" firstAttribute="leading" secondItem="nKc-SM-aF1" secondAttribute="leading" constant="16" id="8vi-9w-6Ze"/>
+                            <constraint firstItem="nKc-SM-aF1" firstAttribute="trailing" secondItem="5nT-lP-YY8" secondAttribute="trailing" constant="16" id="9WL-cI-0Lw"/>
+                            <constraint firstItem="6bX-i3-q2d" firstAttribute="top" secondItem="tdd-sX-KvF" secondAttribute="bottom" constant="35" id="CPf-gx-g4k"/>
+                            <constraint firstItem="tdd-sX-KvF" firstAttribute="top" secondItem="5nT-lP-YY8" secondAttribute="bottom" constant="35" id="E3e-TJ-yfu"/>
+                            <constraint firstItem="nKc-SM-aF1" firstAttribute="trailing" secondItem="2Kn-eK-ICa" secondAttribute="trailing" constant="150" id="FDy-Kb-dgT"/>
+                            <constraint firstItem="nKc-SM-aF1" firstAttribute="trailing" secondItem="5nT-lP-YY8" secondAttribute="trailing" constant="16" id="JAo-y1-Fky"/>
+                            <constraint firstItem="6bX-i3-q2d" firstAttribute="centerX" secondItem="oOw-Sr-FhY" secondAttribute="centerX" id="Njd-ms-uEr"/>
+                            <constraint firstItem="nKc-SM-aF1" firstAttribute="bottom" secondItem="5nT-lP-YY8" secondAttribute="bottom" constant="371" id="PmF-ht-7yl"/>
+                            <constraint firstItem="5nT-lP-YY8" firstAttribute="leading" secondItem="nKc-SM-aF1" secondAttribute="leading" constant="16" id="lsY-rN-piE"/>
+                            <constraint firstItem="5nT-lP-YY8" firstAttribute="top" secondItem="2Kn-eK-ICa" secondAttribute="bottom" constant="318" id="pzN-pZ-4Ag"/>
+                            <constraint firstItem="2Kn-eK-ICa" firstAttribute="top" secondItem="nKc-SM-aF1" secondAttribute="top" constant="20" id="rtc-Xk-arZ"/>
+                            <constraint firstItem="5nT-lP-YY8" firstAttribute="top" secondItem="2Kn-eK-ICa" secondAttribute="bottom" constant="318" id="vE0-qq-p3Y"/>
+                            <constraint firstItem="2Kn-eK-ICa" firstAttribute="top" secondItem="oOw-Sr-FhY" secondAttribute="topMargin" constant="40" id="yHW-Uk-N2r"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rtc-Xk-arZ"/>
+                                <exclude reference="yHW-Uk-N2r"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="dcZ-BN-xiV"/>
+                    <connections>
+                        <outlet property="newQuestionText" destination="5nT-lP-YY8" id="0Ls-2d-6gx"/>
+                        <outlet property="segmetedControl" destination="tdd-sX-KvF" id="GkY-ac-lTc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7a7-49-Sfk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1067.6923076923076" y="3.5545023696682461"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
@@ -106,6 +206,9 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

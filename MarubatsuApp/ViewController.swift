@@ -12,20 +12,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     var currentQuestionNum : Int = 0
     // 問題
-    let questions: [[String: Any]] = [
+    var questions: [[String: Any]] = [
         [
             "question": "iPhoneアプリを開発する統合環境はZcodeである",
             "answer": false
         ],
-        [
-            "question": "Xcode画面の右側にはユーティリティーズがある",
-            "answer": true
-        ],
-        [
-            "question": "UILabelは文字列を表示する際に利用する",
-            "answer": true
-        ]
     ]
+    //呼び出しメソッド
+    func calling() {
+        let morisDefaults = UserDefaults.standard
+        if morisDefaults.object(forKey: "add") != nil {
+            questions = morisDefaults.object(forKey: "add") as! [[String: Any]]
+        }
+        showQuestion()
+    }
     //問題を表示する関数
     func showQuestion(){
         let question = questions[currentQuestionNum]
