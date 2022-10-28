@@ -13,6 +13,7 @@
 		A50D9351290366DC00712781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50D934F290366DC00712781 /* Main.storyboard */; };
 		A50D9353290366E200712781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50D9352290366E200712781 /* Assets.xcassets */; };
 		A50D9356290366E200712781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50D9354290366E200712781 /* LaunchScreen.storyboard */; };
+		A5CDE3F42905850700E70DBB /* addNewQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CDE3F32905850700E70DBB /* addNewQuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A50D9352290366E200712781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A50D9355290366E200712781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50D9357290366E200712781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5CDE3F32905850700E70DBB /* addNewQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNewQuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				A50D934B290366DC00712781 /* SceneDelegate.swift */,
 				A50D934D290366DC00712781 /* ViewController.swift */,
 				A50D934F290366DC00712781 /* Main.storyboard */,
+				A5CDE3F32905850700E70DBB /* addNewQuestionViewController.swift */,
 				A50D9352290366E200712781 /* Assets.xcassets */,
 				A50D9354290366E200712781 /* LaunchScreen.storyboard */,
 				A50D9357290366E200712781 /* Info.plist */,
@@ -141,6 +144,7 @@
 				A50D934E290366DC00712781 /* ViewController.swift in Sources */,
 				A50D934A290366DC00712781 /* AppDelegate.swift in Sources */,
 				A50D934C290366DC00712781 /* SceneDelegate.swift in Sources */,
+				A5CDE3F42905850700E70DBB /* addNewQuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
