@@ -53,12 +53,12 @@
                                     <action selector="tappedYesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPP-DU-dHy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DP8-sq-28u">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="問題を入力してください" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DP8-sq-28u">
                                 <rect key="frame" x="20" y="137" width="350" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="tR5-gm-d1H"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -140,14 +140,14 @@
                                     <action selector="end:" destination="iQE-ET-kN6" eventType="editingDidEndOnExit" id="ZhG-50-g2p"/>
                                 </connections>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tdd-sX-KvF">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tdd-sX-KvF">
                                 <rect key="frame" x="149.66666666666666" y="474" width="91" height="32"/>
                                 <segments>
                                     <segment title="✗" width="59"/>
                                     <segment title="○"/>
                                 </segments>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bX-i3-q2d">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bX-i3-q2d">
                                 <rect key="frame" x="139.66666666666666" y="540" width="111" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="問題を保存">
@@ -155,6 +155,16 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="saveButton:" destination="iQE-ET-kN6" eventType="touchUpInside" id="nJp-Y4-Eb0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nti-6R-EhE">
+                                <rect key="frame" x="141" y="761" width="108" height="35"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="問題を全て削除">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearData:" destination="iQE-ET-kN6" eventType="touchUpInside" id="LF6-LM-x0G"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -171,9 +181,12 @@
                             <constraint firstItem="tdd-sX-KvF" firstAttribute="top" secondItem="5nT-lP-YY8" secondAttribute="bottom" constant="35" id="E3e-TJ-yfu"/>
                             <constraint firstItem="nKc-SM-aF1" firstAttribute="trailing" secondItem="2Kn-eK-ICa" secondAttribute="trailing" constant="150" id="FDy-Kb-dgT"/>
                             <constraint firstItem="nKc-SM-aF1" firstAttribute="trailing" secondItem="5nT-lP-YY8" secondAttribute="trailing" constant="16" id="JAo-y1-Fky"/>
+                            <constraint firstItem="nKc-SM-aF1" firstAttribute="bottom" secondItem="nti-6R-EhE" secondAttribute="bottom" constant="14" id="N41-Jq-49y"/>
                             <constraint firstItem="6bX-i3-q2d" firstAttribute="centerX" secondItem="oOw-Sr-FhY" secondAttribute="centerX" id="Njd-ms-uEr"/>
                             <constraint firstItem="nKc-SM-aF1" firstAttribute="bottom" secondItem="5nT-lP-YY8" secondAttribute="bottom" constant="371" id="PmF-ht-7yl"/>
+                            <constraint firstItem="nti-6R-EhE" firstAttribute="top" secondItem="6bX-i3-q2d" secondAttribute="bottom" constant="186" id="RUp-Du-ySo"/>
                             <constraint firstItem="5nT-lP-YY8" firstAttribute="leading" secondItem="nKc-SM-aF1" secondAttribute="leading" constant="16" id="lsY-rN-piE"/>
+                            <constraint firstItem="nti-6R-EhE" firstAttribute="centerX" secondItem="oOw-Sr-FhY" secondAttribute="centerX" id="mQ3-54-y0g"/>
                             <constraint firstItem="5nT-lP-YY8" firstAttribute="top" secondItem="2Kn-eK-ICa" secondAttribute="bottom" constant="318" id="pzN-pZ-4Ag"/>
                             <constraint firstItem="2Kn-eK-ICa" firstAttribute="top" secondItem="nKc-SM-aF1" secondAttribute="top" constant="20" id="rtc-Xk-arZ"/>
                             <constraint firstItem="5nT-lP-YY8" firstAttribute="top" secondItem="2Kn-eK-ICa" secondAttribute="bottom" constant="318" id="vE0-qq-p3Y"/>
